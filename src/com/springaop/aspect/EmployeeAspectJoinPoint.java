@@ -16,7 +16,6 @@ public class EmployeeAspectJoinPoint {
 
 	}
 
-	// Advice arguments, will be applied to bean methods with single String argument
 	@Before("args(name)")
 	public void logStringArguments(String name) {
 		System.out.println("String argument passed=" + name);
